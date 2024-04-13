@@ -1,6 +1,7 @@
 body{
     background-color: rgb(255 255 255);
     margin: 20px;
+    background-image:url('WhatsApp Video 2024-04-13 at 23.32.07 (1).mp4');
 }
 #profile-wrapper{
     text-align: center;
@@ -22,6 +23,24 @@ ul{
     margin-left: 9px;
 }
 .social{
-    width: 70px;
+    width: 57px;
     height: 41px;
 }
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("WhatsApp Video 2024-04-13 at 23.32.07 (1).mp4") no-repeat;
+      background-size: cover;
+    }
+  }
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
